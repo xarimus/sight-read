@@ -1,0 +1,19 @@
+{
+  "name": "sightread",
+  "version": "0.0.1",
+  "description": "A web-based application designed to help people learning classical guitar with sightreading skills, focused on first-position.",
+  "license": "ISC",
+  "author": "Aaron Haskett",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@coderline/alphatab": "^1.8.2"
+  },
+  "devDependencies": {
+    "@coderline/alphatab-vite": "^1.8.2",
+    "vite": "^7.3.3"
+  }
+}

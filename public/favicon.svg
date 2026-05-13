@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="5" fill="#1e1e2e"/>
+  <!-- five staff lines -->
+  <line x1="2" y1="9"  x2="30" y2="9"  stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="2" y1="13" x2="30" y2="13" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="2" y1="17" x2="30" y2="17" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="2" y1="21" x2="30" y2="21" stroke="#94a3b8" stroke-width="1.2"/>
+  <line x1="2" y1="25" x2="30" y2="25" stroke="#94a3b8" stroke-width="1.2"/>
+  <!-- quarter note: notehead in the space between lines 3–4, tilted as in engraving -->
+  <ellipse cx="21" cy="19" rx="4.6" ry="3.2" transform="rotate(-18 21 19)" fill="#6366f1"/>
+  <!-- stem up from right side of notehead -->
+  <line x1="25.3" y1="18" x2="25.3" y2="4" stroke="#6366f1" stroke-width="2"/>
+</svg>
