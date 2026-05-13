@@ -1,8 +1,8 @@
 {
-  "name": "sightread",
-  "version": "0.0.1",
+  "name": "sight-read",
+  "version": "1.0.0",
   "description": "A web-based application designed to help people learning classical guitar with sightreading skills, focused on first-position.",
-  "license": "ISC",
+  "license": "MIT",
   "author": "Aaron Haskett",
   "type": "module",
   "scripts": {
