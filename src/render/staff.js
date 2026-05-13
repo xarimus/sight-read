@@ -33,7 +33,7 @@ export function createStaff(container) {
   settings.core.logLevel = 2;
   settings.core.fontDirectory = '/font/';
   settings.display.staveProfile = StaveProfile.Score;  // notation only, no tab
-  settings.display.scale = 2.0;  // larger size for better visibility
+  settings.display.scale = window.matchMedia('(max-width: 768px)').matches ? 1.5 : 2.0;
   settings.player.enablePlayer = false;
   settings.player.enableCursor = false;
 

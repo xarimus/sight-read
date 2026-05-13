@@ -27,7 +27,7 @@ body {
   height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto auto;
-  grid-template-columns: 220px 1fr 340px;
+  grid-template-columns: 220px 1fr 420px;
   grid-template-areas:
     "nav      nav      nav"
     "viz      score    panel"

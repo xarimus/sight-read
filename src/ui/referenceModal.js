@@ -19,11 +19,11 @@ export function createReferenceModal() {
       <div class="modal-body">
         <div class="modal-section">
           <h3>Why YIN pitch detection?</h3>
-          <p>YIN (de Cheveigné &amp; Kawahara 2002) needs no model file to download, runs in under a millisecond, and yields a cents-offset reading for free — exactly what a tuner needle needs. Polyphonic ML detectors (Basic Pitch, CREPE) would add 20 MB of weight and latency for a task that is inherently monophonic: the student plays one note at a time.</p>
+          <p>YIN (de Cheveigné &amp; Kawahara 2002) needs no model file to download, runs in under a millisecond, and yields a cents-offset reading for free, exactly what a tuner needle needs. Polyphonic ML detectors (Basic Pitch, CREPE) would add 20 MB of weight and latency for a task that is inherently monophonic: the user plays one note at a time.</p>
         </div>
         <div class="modal-section">
-          <h3>Why is B3 only on the open 2nd string?</h3>
-          <p>The same MIDI pitch (59 = B3) also lives at fret 4, string 3. Putting both positions in the pool means the drill could present B3 twice in a row, which the no-repeat logic intentionally prevents — leaving the student stuck. The open 2nd string is the standard pedagogical primary for classical guitar, so that position is the canonical target. A dedicated "B3 Redundancy Drill" is planned for Block 5 once dual-position rendering is supported.</p>
+          <h3>Why first position only?</h3>
+          <p>Frets 0 through 4 cover the foundational note set of classical pedagogy and eliminate the guitar's notorious fretboard redundancy, the same pitch appearing in multiple positions. Restricting the range gives beginners a reliable one-to-one mapping between staff and fretboard (mostly), so mental energy goes toward reading rather than hand navigation. Expanding to higher positions or full-neck random selection is a future option once the core reading habit is established.</p>
         </div>
         <div class="modal-section">
           <h3>Why the Match-Lock-Release state machine?</h3>
@@ -39,7 +39,7 @@ export function createReferenceModal() {
         </div>
         <div class="modal-section">
           <h3>What comes next?</h3>
-          <p>Two architectural seams are already in place: <code>createTargetSource()</code> (currently random or constrained-random) will be extended for sequential phrase sources, and <code>PitchDetector</code> (currently wrapping YIN) can be swapped for a polyphonic backend (Basic Pitch, CREPE) when Phrase/Song mode arrives and chord detection becomes useful.</p>
+          <p>I'm considering adding support for phrases and short musical sequences in the future, intersperced witht he drills because playing pieces is more satisfying (for me anyway). I'm open to any other suggestions or feedback that you may have!</p>
         </div>
       </div>
     </div>

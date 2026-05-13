@@ -130,8 +130,8 @@ export function createCustomPanel(container) {
       <label class="stop-opt"><input type="radio" name="custom-stop" value="time" checked> Time</label>
       <label class="stop-opt"><input type="radio" name="custom-stop" value="endless"> Endless</label>
     </div>
-    <input class="stop-num" type="number" min="1" max="9999" value="60">
-    <span class="stop-unit">notes</span>
+    <input class="stop-num" type="number" min="1" max="9999" value="120">
+    <span class="stop-unit">seconds</span>
   `;
   container.appendChild(stopRow);
 

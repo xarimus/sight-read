@@ -16,8 +16,8 @@ export function createPresetsPanel(container) {
         <label class="stop-opt"><input type="radio" name="preset-stop" value="time" checked> Time</label>
         <label class="stop-opt"><input type="radio" name="preset-stop" value="endless"> Endless</label>
       </div>
-      <input class="stop-num" type="number" min="1" max="9999" value="60">
-      <span class="stop-unit">notes</span>
+      <input class="stop-num" type="number" min="1" max="9999" value="120">
+      <span class="stop-unit">seconds</span>
     </div>
   `;
 
@@ -79,7 +79,7 @@ export function createPresetsPanel(container) {
     const type = getStopType();
     stopNum.style.display = type === 'endless' ? 'none' : '';
     stopUnit.textContent  = type === 'time' ? 'seconds' : 'notes';
-    stopNum.value         = type === 'time' ? 60 : 45;
+    stopNum.value         = type === 'time' ? 120 : 45;
   }));
 
   return {
