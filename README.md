@@ -49,7 +49,7 @@ A second entry point at `debug.html` renders a development console overlay for i
 
 ## Architecture
 
-**Stack:** Vite · AlphaTab · Web Audio API · plain ES6 modules (no framework)
+**Stack:** Vite · Web Audio API · plain ES6 modules (no framework)
 
 ```
 getUserMedia (mono, 22050 Hz)
@@ -80,7 +80,7 @@ This prevents false advances on pitch transients between notes. The `step()` fun
 
 ### Staff rendering
 
-AlphaTab (`@coderline/alphatab`) renders a single-staff score with no tablature — deliberate, to train staff reading rather than tab dependency. Notes are colored in real time via AlphaTab's style API (green = correct, red = wrong).
+A lightweight custom SVG renderer (`src/render/staff.js`) draws a two-bar treble staff inline — no third-party notation library. Each of the 29 first-position notes maps to a precomputed staff position (guitar treble clef is written an octave above concert pitch). Glyphs (treble clef, accidentals) come from the [Bravura](https://github.com/steinbergmedia/bravura) SMuFL font (SIL OFL). The target note is shown in blue; correct matches turn green, wrong notes red.
 
 ### Persistence
 
