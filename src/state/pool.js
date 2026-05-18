@@ -1,11 +1,11 @@
 import { NOTES } from './targets.js';
 
 export function stringOf(note) {
-  return Number(note.alphaTex.split('.')[1]);
+  return Number(note.fretString.split('.')[1]);
 }
 
 export function fretOf(note) {
-  return Number(note.alphaTex.split('.')[0]);
+  return Number(note.fretString.split('.')[0]);
 }
 
 export function isNatural(note) {

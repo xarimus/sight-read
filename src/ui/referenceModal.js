@@ -34,8 +34,8 @@ export function createReferenceModal() {
           <p>Silence detection needs a threshold to tell genuine silence apart from ambient noise, string buzz, or AC hum. The default gate (0.005 RMS) is tuned to ignore a quiet room while still recognising a softly played open string. It is exposed as a knob in the Debug page for environments that need adjustment.</p>
         </div>
         <div class="modal-section">
-          <h3>Why AlphaTab for notation?</h3>
-          <p>AlphaTab renders standard musical notation (no tablature, per the drill goal of forcing staff reading) via WebAssembly-accelerated SVG, fully in the browser with no server round-trips. AlphaTex strings encode each target note in a few characters and can be hot-swapped on every advance, giving instant visual feedback.</p>
+          <h3>How is the notation rendered?</h3>
+          <p>The staff is a lightweight custom SVG renderer — no third-party notation library. Each target note maps to a precomputed staff position (guitar treble clef is written one octave above concert pitch) and renders synchronously as inline SVG. Glyphs (treble clef, accidentals) come from the <a href="https://github.com/steinbergmedia/bravura" target="_blank" rel="noopener">Bravura</a> SMuFL font, which ships with the app under the SIL Open Font Licence.</p>
         </div>
         <div class="modal-section">
           <h3>What comes next?</h3>

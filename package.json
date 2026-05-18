@@ -9,11 +9,8 @@
     "dev": "vite",
     "build": "vite build"
   },
-  "dependencies": {
-    "@coderline/alphatab": "^1.8.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@coderline/alphatab-vite": "^1.8.2",
     "vite": "^7.3.3"
   }
 }
